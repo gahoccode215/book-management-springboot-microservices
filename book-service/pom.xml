@@ -69,6 +69,11 @@
 			<artifactId>guava</artifactId>
 			<version>33.4.8-jre</version>
 		</dependency>
+		<dependency>
+			<groupId>com.gahoccode</groupId>
+			<artifactId>common-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
