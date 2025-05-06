@@ -1,6 +1,7 @@
 package com.gahoccode.employee_service.command.controller;
 
 import com.gahoccode.employee_service.command.command.CreateEmployeeCommand;
+import com.gahoccode.employee_service.command.command.DeleteEmployeeCommand;
 import com.gahoccode.employee_service.command.command.UpdateEmployeeCommand;
 import com.gahoccode.employee_service.command.model.CreateEmployeeModel;
 import com.gahoccode.employee_service.command.model.UpdateEmployeeModel;
@@ -27,6 +28,12 @@ public class EmployeeCommandController {
     @PutMapping("/{employeeId}")
     public String updateEmployee(@Valid @RequestBody UpdateEmployeeModel model, @PathVariable String employeeId){
         UpdateEmployeeCommand command = new UpdateEmployeeCommand(employeeId, model.getFirstName(), model.getLastName(), model.getLastName(), model.getIsDisciplined());
+        return commandGateway.sendAndWait(command);
+    }
+
+    @DeleteMapping("/{employeeId}")
+    public String deleteEmployee(@PathVariable String employeeId){
+        DeleteEmployeeCommand command = new DeleteEmployeeCommand(employeeId);
         return commandGateway.sendAndWait(command);
     }
 
