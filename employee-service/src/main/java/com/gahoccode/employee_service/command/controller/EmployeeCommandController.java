@@ -1,13 +1,13 @@
 package com.gahoccode.employee_service.command.controller;
 
 import com.gahoccode.employee_service.command.command.CreateEmployeeCommand;
+import com.gahoccode.employee_service.command.command.UpdateEmployeeCommand;
 import com.gahoccode.employee_service.command.model.CreateEmployeeModel;
+import com.gahoccode.employee_service.command.model.UpdateEmployeeModel;
+import jakarta.validation.Valid;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
@@ -24,5 +24,10 @@ public class EmployeeCommandController {
         return commandGateway.sendAndWait(command);
     }
 
+    @PutMapping("/{employeeId}")
+    public String updateEmployee(@Valid @RequestBody UpdateEmployeeModel model, @PathVariable String employeeId){
+        UpdateEmployeeCommand command = new UpdateEmployeeCommand(employeeId, model.getFirstName(), model.getLastName(), model.getLastName(), model.getIsDisciplined());
+        return commandGateway.sendAndWait(command);
+    }
 
 }
