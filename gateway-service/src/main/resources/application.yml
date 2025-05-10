@@ -13,6 +13,16 @@ spring:
           uri: lb://employee-service
           predicates:
             - Path=/api/v1/employees/**
+          filters:
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 10
+                redis-rate-limiter.burstCapacity: 20
+                redis-rate-limiter.requestedToken: 2
+  data:
+    redis:
+      host: localhost
+      port: 6379
 
 eureka:
   instance:
