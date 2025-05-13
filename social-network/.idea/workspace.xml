@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e1fc462-8f48-4522-92db-ba78d2f83e53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/repository/httpclient/ProfileClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/dto/request/ProfileCreationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/dto/response/UserProfileResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/mapper/ProfileMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identity-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/identity-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/IdentityServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/IdentityServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/dto/request/UserCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/dto/request/UserCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/dto/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/dto/response/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/repository/httpclient/ProfileClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/repository/httpclient/ProfileClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/devteria/identity/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/identity-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/identity-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-service/src/main/java/com/devteria/profile/dto/request/UserProfileCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile-service/src/main/java/com/devteria/profile/dto/request/UserProfileCreationRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747092479152</updated>
-      <workItem from="1747092480307" duration="2374000" />
+      <workItem from="1747092480307" duration="2768000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,6 @@
-package com.devteria.identity.dto.response;
+package com.devteria.identity.dto.request;
 
 import java.time.LocalDate;
-import java.util.Set;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -11,8 +10,10 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserResponse {
-    String id;
-    String username;
-    Set<RoleResponse> roles;
+public class ProfileCreationRequest {
+    String userId;
+    String firstName;
+    String lastName;
+    LocalDate dob;
+    String city;
 }
