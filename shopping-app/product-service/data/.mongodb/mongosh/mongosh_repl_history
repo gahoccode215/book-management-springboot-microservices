@@ -1,0 +1,3 @@
+show users
+use admin
+docker exec -it mongodb mongosh -u root -p password --authenticationDatabase admin
